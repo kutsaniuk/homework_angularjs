@@ -1,0 +1,170 @@
+html,body {
+  font-family: segoe ui;
+  margin: 0;
+  background: #eee;
+}
+header, footer{
+  position: fixed;
+  width: 100%;
+  background: #444;
+  margin: 0;
+  height: 50px;
+}
+footer {
+  margin-bottom: 0px;
+  position: absolute;
+}
+ul li {
+  width: auto;
+  margin: 15px;
+  list-style: none;
+  display: inline-block;
+}
+li a {
+  color: #777;
+}
+li a:hover {
+  text-decoration: none;
+  color: #999;
+}
+li a:focus{
+  text-decoration: none;
+  color: #999;
+}
+section{ margin: 0 auto;}
+section article{
+  margin: 15px;
+  width: 250px;
+  height: 250px;
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  padding:10px;
+}
+article{display: block;}
+table{
+  margin: 0 auto;
+  width: 500px;
+  background: #fff;
+  border-bottom:1px solid #e2e2e2; 
+}
+#table-title{
+  border-bottom:1px solid #e2e2e2; 
+  background:#fbfbfb;
+}
+tr.tr-border-none{
+  border: none;
+}
+
+td{padding: 20px;}
+#phone-details{
+  width: 650px;
+}
+#set-photo{
+    cursor: pointer;
+    height: 80px;
+    margin: 10px;
+    border-bottom: 5px solid #fff;
+}
+#set-photo:hover{
+  border-bottom: 5px solid #333;
+  -webkit-transition: ease-in-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+  -o-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;  
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:#666;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:#666;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:#666;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:#666;
+}select{
+  width: 25.2%;
+  background: #f3f3f3;
+  border: none;
+  font-family: segoe ui;
+  border-radius: 5px;
+  padding: 2px 5px 2px 5px;
+}
+.label-succes{
+  background: #80ce61;
+}
+#nav{
+  display: block;
+  width: 700px;
+  margin: 0 auto;
+}
+#logo a{
+  padding: 15px;
+  text-decoration: none;
+  float: left;
+  color: #fff;
+  font-family: segoe ui;
+  font-weight: bold;
+}
+#logo a:hover{color:#e2e2e2;}
+#search{
+  margin: 12.5px;
+  margin-right: 50px;
+  float: right;
+  border: none;
+  border-radius: 5px;
+  background: #333; 
+  padding: 2px 5px 2px 5px;
+  color: #eee;
+  outline: 0;
+  -webkit-transition: ease-in-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+  -o-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+}
+#search:focus{background:#393939;}
+#phone-name{
+  font-weight: bold;
+}
+#img-index{
+  height: 50%;
+}
+#copyright{
+  padding: 15px;
+  color: #999;
+  font-family: segoe ui;
+  font-weight: bold;
+}
+#title{
+  font-size: 30px;
+
+}
+tr.title-tr{
+  font-weight: bold;
+  color: #333;
+  background: #f9f9f9;
+}
+tr.tr-active{
+  border-left: 3px solid #fff;
+  display: block;
+  -webkit-transition: ease-in-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+  -o-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+}
+tr.tr-active:hover{
+  border-left: 3px solid #333;
+}
+dt{
+  display: block;
+  color: #555;
+}
+a{
+  -webkit-transition: ease-in-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+  -o-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+}

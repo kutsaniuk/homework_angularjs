@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" ng-app="phonecatApp">
+<head>
+  <meta charset="utf-8">
+  <title>Loftblog Angular Phonecat App</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body ng-controller="PhoneListCtrl">
+  <header>
+    <div id="nav">
+    <ul>
+      <div id="logo"><a href="#/home">PhoneShop</a></div>
+      <li><a href="#/about">About</a></li>
+      <li><a href="#/contact">Contact</a></li>
+      <input id="search" type="text" ng-model="searchName" placeholder="Search">
+    </ul> 
+    </div>
+  </header>
+
+  <section>
+      <ng-view></ng-view>
+  </section>
+
+  <footer>
+    <div id="copyright">&copy; kutsaniuk 2015</div>
+  </footer>
+
+
+<!-- Angular.js core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="bower_components/angular/angular.js"></script>
+<!--Angular.js Route-->
+<script src="bower_components/angular-route/angular-route.js"></script>
+<!--Angular.js Resource-->
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+
+<script src="js/controllers.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<br><br><br><br>  
+<table>
+  <tr>
+    <td colspan="2">
+      Select status:  
+      <select ng-model="checkStatus" >
+        <option value="true" >In stock</option>
+        <option value="false">Not available</option>
+      </select>
+    </td>
+  </tr>
+  <tr ng-repeat="phone in phones | filter:{name: searchName, status: checkStatus} | orderBy:'name'" style="border-bottom:1px solid #eee;"
+  class="tr-active">
+    <td><a href="#/phones/{{phone.id}}">
+      <img id="img-index" ng-src="{{phone.imageUrl}}"></a>
+    </td>
+    <td>
+
+      <p>
+        <span id="phone-name"><a href="#/phones/{{phone.id}}">{{phone.name}}</a></span>
+        <span class="label" ng-init="status = phone.status ? 'In stock' : 'Not available'" ng-class="{'label-succes':phone.status, 'label-warning': !phone.status}">{{status}}</span>
+        <p>{{(phone.snippet)}}</p>
+      </p>
+      
+    </td>
+  </tr>
+</table>
+  
