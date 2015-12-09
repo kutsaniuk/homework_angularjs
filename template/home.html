@@ -15,7 +15,6 @@
       <img id="img-index" ng-src="{{phone.imageUrl}}"></a>
     </td>
     <td>
-
       <p>
         <span id="phone-name"><a href="#/phones/{{phone.id}}">{{phone.name}}</a></span>
         <span class="label" ng-init="status = phone.status ? 'In stock' : 'Not available'" ng-class="{'label-succes':phone.status, 'label-warning': !phone.status}">{{status}}</span>
