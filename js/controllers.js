@@ -78,7 +78,7 @@ phonecatApp.controller('AboutCtrl',[
   function($scope, $http, $location) {
 
   }
-]);
+]); 
 
 /* Contact Controller */
 phonecatApp.controller('ContactCtrl',[
